@@ -56,7 +56,7 @@ function typeNextDialogue() {
                 button.style.display = 'block';
             } 
             else if(index == dialogues.length) {
-                window.location.href = 'https://www.youtube.com/@Noob-grammer';
+                window.location.href = 'home.html';
             }
             else {
                 typeNextDialogue();
