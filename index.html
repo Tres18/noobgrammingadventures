@@ -3,75 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noobgramming Adventures!</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/b1d60e9318.js" crossorigin="anonymous"></script>
+    <title>The Beningging...</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="Image/weblogo.png" alt="Noobgramming Adventures Logo">
-        </div>
-        <h1>Noobgramming Adventures</h1>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="about.html"><i class="fa-solid fa-circle-info"></i></a></li>
-                <li><a href="project.html"><i class="fa-regular fa-folder-open"></i></a></li>
-                <li><a href="https://www.youtube.com/@Noob-grammer" target="blank"><i class="fa-brands fa-youtube"></i></a></li>    
-            </ul>
-        </nav>
-    </header>
+    <div class="output-box">
+        <h1 id="output"></h1>
+        <button id="startButton" style="display: none"></button>
+    </div>
 
-    <main class="home-main">
-        <div class="home-content">
-            <h1 id="home-content-h1">Noobgramming Adventures</h1>
-            <p id="home-content-p1">Learn how to write words that do stuffs from a noobgrammer!</p>
-            <div class="home-btn-container">
-                <a href="about.html" class="home-btn">What on Earth is this?</a>
-                <a href="project.html" class="home-btn">Start your adventure!</a>
-                <a href="javascript:void(0);" id="nty" class="home-btn">No, thank you.</a>
-            </div>
-        </div class="home-content2">
-            <h1></h1>
-        <div>
-
-        </div>
-    </main>
-
-    <script>
-        const nty = document.getElementById('nty');
-
-        nty.addEventListener('mouseover', (event) => {
-            const container = nty.parentElement;
-            const containerRect = container.getBoundingClientRect();
-            const ntyRect = nty.getBoundingClientRect();
-            const maxX = containerRect.width - ntyRect.width;
-            const maxY = containerRect.height - ntyRect.height;
-
-            let newLeft = Math.random() * maxX;
-            let newTop = Math.random() * maxY;
-
-            nty.style.position = 'absolute';
-            nty.style.left = `${newLeft}px`;
-            nty.style.top = `${newTop}px`;
-        });
-
-        nty.onclick = function() {
-            const container = nty.parentElement;
-            const containerRect = container.getBoundingClientRect();
-            const ntyRect = nty.getBoundingClientRect();
-            const maxX = containerRect.width - ntyRect.width;
-            const maxY = containerRect.height - ntyRect.height;
-
-            let newLeft = Math.random() * maxX;
-            let newTop = Math.random() * maxY;
-
-            nty.style.position = 'absolute';
-            nty.style.left = `${newLeft}px`;
-            nty.style.top = `${newTop}px`;
-        }
-    </script>
+    <div class="skip-box"><button id="skipButton" style="display: none">I've been here before!</button></div>
     
+   
+    <script src="convo.js"></script>
 </body>
 </html>
