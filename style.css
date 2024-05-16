@@ -31,10 +31,6 @@ h1, h2, p {
     color: #f0f0f0;
 }
 
-.project-header {
-    margin: 20px;
-}
-
 a, button { font-family: "Boring-Sans-B-Medium";}
 
 header h1 { font-size: 1.5rem; }
@@ -151,6 +147,11 @@ a {
     margin-right: auto;
 }
 
+.adventure-section:hover {
+    background-color: #2e2e2e;
+    cursor: pointer;
+}
+
 .adventure-section h1 {
     text-align: center;
 }
@@ -249,12 +250,53 @@ a {
 }
 
 
+/* Project Section */
+
+.project-header {
+    margin: 20px;
+}
+
 .project-main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to full viewport height */
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content vertically */
+}
+
+.project-section {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+    position: relative;
+    /* Center the box horizontally */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-section:hover {
+    background-color: #2e2e2e;
+    cursor: pointer;
+}
+
+.project-section h1 {
     text-align: center;
-    height: 100vh;
-    margin: 0px 30px;
+}
+
+.project-paragraph {
+    font-family: "Boring-Sans-B-Regular";
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .coming-soon {
