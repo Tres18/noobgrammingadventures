@@ -8,14 +8,17 @@
     src: url("Font/boring_sans_b/Boring-Sans-B-Regular-trial.ttf");
 }
 
-body, h1, h2, nav, ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+body {
     background-color: #131313;
 }
 
+body, h1, h2, nav, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
 header {
+    background-color: #0a0a0a;
     color: #f0f0f0;
     display: flex;
     padding: 10px 20px;
@@ -28,6 +31,10 @@ h1, h2, p {
     color: #f0f0f0;
 }
 
+.project-header {
+    margin: 20px;
+}
+
 a, button { font-family: "Boring-Sans-B-Medium";}
 
 header h1 { font-size: 1.5rem; }
@@ -38,7 +45,10 @@ header h1 { font-size: 1.5rem; }
 
 nav { margin-left: auto; }
 
-nav ul { display: flex; }
+nav ul { 
+    display: flex;
+    list-style: none;
+}
 
 nav li { margin: 10px 20px; }
 
@@ -108,40 +118,136 @@ a {
     position: relative;
 }
 
+/* Adventure Section */
+
+.adventure-header {
+    margin: 20px;
+}
+
+.adventure-main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to full viewport height */
+}
+
+.adventure-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content vertically */
+}
+
+.adventure-section {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+    position: relative;
+    /* Center the box horizontally */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.adventure-section h1 {
+    text-align: center;
+}
+
+.adventure-paragraph {
+    font-family: "Boring-Sans-B-Regular";
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+
 .about-main {
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 100vh;
-    margin: 0px 30px;
+    margin: 30px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #about-content-h1 {
     margin-bottom: 20px;
 }
 
-.about-content-subhead {
-    margin: 20px;
+.about-section {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+    position: relative;
 }
 
-.about-paragraph {
+.about-section h1 {
+    text-align: center;
+}
+
+.about-paragraph, .about-paragraph-last {
     font-family: "Boring-Sans-B-Regular";
     color: white;
-    font-size: 1.5rem;
-    text-align: left;
-    margin: 0px 100px;
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
 .about-paragraph-last {
-    font-family: "Boring-Sans-B-Regular";
-    color: white;
-    font-size: 1.5rem;
-    text-align: left;
-    margin: 0px 100px;
-    margin-bottom: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 10px;
 }
+
+.about-list {
+    margin: 20px 30px;
+}
+
+
+.about-btn {
+    padding: 10px 15px;
+    color: #aaaaaa;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.about-btn span {
+    position: relative;
+}
+
+.about-btn span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: #aaaaaa;
+    transition: background-color 0.3s;
+}
+
+.about-btn:hover span::after {
+    background-color: #FFFFFF;
+}
+
+.about-btn:hover {
+    color: #FFFFFF;
+}
+
 
 .project-main {
     display: flex;
@@ -151,9 +257,9 @@ a {
     margin: 0px 30px;
 }
 
-#project-content-p1 {
+.coming-soon {
     color: #aaaaaa;
-    font-size: 3rem;
+    text-align: center;
 }
 
 /* start */
@@ -166,26 +272,32 @@ a {
     font-size: 36px;
     text-align: center;
     height: 100vh;
-    margin: 0px 100px;
+    margin: 0px 50px;
 }
 
-#startButton {
-    font-size: 24px;
+.start-box {
+    display: flex;
+    justify-content: center;
+    position: fixed; /* Change position to fixed */
+    bottom: 50px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+.start-box button {
+    font-size: 16px; /* Adjust font size as needed */
     background-color: #eeeeee;
-    padding: 10px 10px;
+    padding: 10px 15px;
     color: #131313;
     text-decoration: none;
     border: 2px solid #505050;
     border-radius: 20px;
     box-sizing: border-box;
     text-align: center;
-    margin-top: 20px;
-    
 }
 
-#startButton:hover {
+.start-box button:hover {
     background-color: #FFFFFF;
-    cursor: pointer;
 }
 
 .skip-box {
@@ -194,18 +306,34 @@ a {
 }
 
 #skipButton {
-    font-size: 12px;
-    background-color: #eeeeee;
-    padding: 10px 10px;
-    color: #131313;
-    text-decoration: none;
-    border: 2px solid #505050;
-    border-radius: 20px;
-    box-sizing: border-box;
+    font-size: 12px;   
+    text-decoration: underline;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+footer {
+    background-color: #0a0a0a;
+    padding: 20px 0;
     text-align: center;
-    position: absolute; /* Position the skip button absolutely */
-    bottom: 20px; /* Adjust the distance from the bottom */
-    right: 20px; /* Adjust the distance from the right */
+    flex-shrink: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-content a {
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.footer-content a i {
+    margin-right: 8px;
 }
 
 @media (max-width: 700px) {
@@ -219,17 +347,20 @@ a {
 
     .home-btn { width: 100%; }
 
-    .about-main h1 {
+    .output-box {
         font-size: 1.5rem;
     }
-    .about-paragraph {
-        font-size: 1rem;
-        width: 400px;
+
+    .about-section {
+        width: 90%;
     }
 
-    .about-paragraph-last {
+    .about-paragraph, .about-paragraph-last {
         font-size: 1rem;
-        width: 400px;
+    }
+
+    .footer-content a {
+        font-size: 0.8rem;
     }
 }
 

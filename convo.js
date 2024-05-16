@@ -37,10 +37,6 @@ if (hasVisited) {
     skipButton.style.display = 'block';
 }
 
-skipButton.addEventListener('click', () => {
-    window.location.href = 'home.html';
-});
-
 button.addEventListener('click', () => {
     button.style.display = 'none';
     typeNextDialogue();
