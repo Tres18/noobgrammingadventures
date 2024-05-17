@@ -8,6 +8,16 @@
     src: url("Font/boring_sans_b/Boring-Sans-B-Regular-trial.ttf");
 }
 
+/* Intro Button */
+#introButton {
+    color: #aaaaaa;
+}
+
+#introButton:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
 body {
     background-color: #131313;
 }
@@ -339,11 +349,64 @@ a {
     border-radius: 20px;
     box-sizing: border-box;
     text-align: center;
+    cursor: pointer;
 }
 
 .start-box button:hover {
     background-color: #FFFFFF;
 }
+
+/* Chapter Opening */
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.opening-text {
+    font-family: "Boring-Sans-B-Medium";
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 3rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    display: none;
+}
+
+.start-opening {
+    display: flex;
+    justify-content: center;
+    position: fixed; /* Change position to fixed */
+    bottom: 50px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: #eeeeee;
+    padding: 10px 15px;
+    color: #131313;
+    text-decoration: none;
+    border: 2px solid #505050;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+}
+
+.start-opening:hover {
+    background-color: #FFFFFF;
+}
+
+
+
+/* Skip */
 
 .skip-box {
     position: relative; /* Make the container relative */

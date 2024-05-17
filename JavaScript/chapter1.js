@@ -23,25 +23,45 @@ const buttonText = [
 const element = document.getElementById('output');
 const button = document.getElementById('startButton');
 const skipButton = document.getElementById('skipButton');
+const openingText = document.getElementById('openingText');
+const startOpeningButton = document.getElementById('startOpening');
+let typingSound = new Audio('../Audio/typingsound.mp3'); // Replace 'typingsound.mp3' with the path to your audio file
 const speed = 50;
 const interval = 1000;
 let index = 0;
 
-const hasVisited = localStorage.getItem('hasVisited');
+document.addEventListener('DOMContentLoaded', () => {
+    showOpeningText();
+});
 
-if (!hasVisited) {
-    localStorage.setItem('hasVisited', true);
-}
-
-if (hasVisited) {
-    skipButton.style.display = 'block';
-}
+startOpeningButton.addEventListener('click', () => {
+    startOpeningButton.style.display = 'none';
+    fadeOutOpeningText();
+});
 
 button.addEventListener('click', () => {
     button.style.display = 'none';
     typeNextDialogue();
 });
 
+function showOpeningText() {
+    openingText.style.display = 'block';
+    setTimeout(() => {
+        openingText.style.opacity = 1;
+    }, 0);
+
+    setTimeout(() => {
+        startOpeningButton.style.display = 'block';
+    }, 500); // Display the start button after the text has fully faded in
+}
+
+function fadeOutOpeningText() {
+    openingText.style.animation = 'fadeOut 0.5s forwards';
+    setTimeout(() => {
+        openingText.style.display = 'none';
+        typeNextDialogue();
+    }, 500); // Start dialogues after the text has faded out
+}
 
 function typeNextDialogue() {
     if (index < dialogues.length) {
@@ -52,7 +72,7 @@ function typeNextDialogue() {
                 button.style.display = 'block';
             } 
             else if(index == dialogues.length) {
-                window.location.href = 'home.html';
+                window.location.href = '../home.html';
             }
             else {
                 typeNextDialogue();
@@ -64,6 +84,7 @@ function typeNextDialogue() {
 function simulateTyping(element, text, speed, callback) {
     let i = 0;
     element.innerHTML = '';
+    typingSound.play();
 
     function typeCharacter() {
         if (i < text.length) {
@@ -71,6 +92,7 @@ function simulateTyping(element, text, speed, callback) {
             i++;
             setTimeout(typeCharacter, speed);
         } else {
+            typingSound.pause();
             if (callback) {
                 setTimeout(callback, interval);
             }
@@ -79,6 +101,3 @@ function simulateTyping(element, text, speed, callback) {
 
     typeCharacter();
 }
-
-typeNextDialogue();
-
