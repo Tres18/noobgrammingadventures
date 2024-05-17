@@ -17,10 +17,10 @@
         <a href="home.html"><h1>Noobgramming Adventures</h1></a>
         <nav>
             <ul class="nav-links">
-                <li><a href="home.html"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="project.html"><i class="fa-regular fa-folder-open"></i></a></li>
-                <li><a href="adventure.html"><i class="fa-solid fa-shield-halved"></i></a></li>  
-                <li><a href="about.html"><i class="fa-solid fa-circle-info"></i></a></li> 
+                <li><a href="home.html" title="Home"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="project.html" title="Projects"><i class="fa-regular fa-folder-open"></i></a></li>
+                <li><a href="adventure.html" title="Adventures"><i class="fa-solid fa-shield-halved"></i></a></li>  
+                <li><a href="about.html" title="About"><i class="fa-solid fa-circle-info"></i></a></li> 
             </ul>
         </nav>
     </header>
@@ -41,16 +41,19 @@
                 </div>
             </a>
             
-            <h1 class="coming-soon">More project is about to come...</h1>
+            <h1 class="coming-soon">More projects coming soon...</h1>
         </div>
     </main>
     <footer>
         <div class="footer-content">
             <a href="https://www.youtube.com/@Noob-grammer" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a>
-            <a href="https://twitter.com/Noobgrammer" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
-            <a href="https://www.instagram.com/Noobgrammer" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <span class="copy-tooltip" id="copy-tooltip">Email copied to clipboard!</span>
+            <a id="copy-email" href="mailto:noobgrammingadventures@gmail.com" target="_blank"><i class="fa-solid fa-at"></i> Email</a>
+            <!-- <a href="https://www.instagram.com/Noobgrammer" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a> -->
             <a href="https://ko-fi.com/noobgrammer" target="_blank"><i class="fa-solid fa-mug-hot"></i> Ko-Fi</a>
         </div>
-    </footer>   
+    </footer>
+
+    <script src="JavaScript/copy.js"></script>
 </body>
 </html>

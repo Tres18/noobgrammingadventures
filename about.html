@@ -16,10 +16,10 @@
         <a href="home.html"><h1>Noobgramming Adventures</h1></a>
         <nav>
             <ul class="nav-links">
-                <li><a href="home.html"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="project.html"><i class="fa-regular fa-folder-open"></i></a></li>
-                <li><a href="adventure.html"><i class="fa-solid fa-shield-halved"></i></a></li>  
-                <li><a href="about.html"><i class="fa-solid fa-circle-info"></i></a></li>   
+                <li><a href="home.html" title="Home"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="project.html" title="Projects"><i class="fa-regular fa-folder-open"></i></a></li>
+                <li><a href="adventure.html" title="Adventures"><i class="fa-solid fa-shield-halved"></i></a></li>  
+                <li><a href="about.html" title="About"><i class="fa-solid fa-circle-info"></i></a></li>   
             </ul>
         </nav>
     </header>
@@ -34,7 +34,7 @@
                     The goal is to learn how to code from scratch and share all the things
                     this noobgrammer learns by making "fun" <i>(hopefully)</i> and informative content!
                 </div><br><br><br>
-                <a href="project.html" class="about-btn"><span>Let me see this "fun and informative content!"</span>  <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="project.html" class="about-btn"><span class="about-span">Let me see this "fun and informative content!"</span>  <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="about-section">
                 <h1 class="about-content-subhead">Who is behind this?</h1>
@@ -48,7 +48,7 @@
                     If you somehow feel like you want to see more of me, I demand a cup of coffee!
                     You can also find more ways to see me by checking the very bottom of the page!
                 </div><br><br><br>
-                <a href="project.html" class="about-btn"><span>Here's where you can provide caffeine for me!</span>  <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="https://ko-fi.com/noobgrammer" class="about-btn" target="_blank"><span class="about-span">Here's where you can provide caffeine for me!</span>  <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="about-section">
                 <h1 class="about-content-subhead">Why Are You Doing This?</h1>
@@ -72,17 +72,20 @@
                     And that's when I thought of making this unusual content!
                     The birth of the Noobgrammer and Noobgramming Adventures!
                 </div><br><br><br>
-                <a href="https://www.youtube.com/@Noob-grammer" class="about-btn"><span>More content in my Youtube channel!</span>  <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="https://www.youtube.com/@Noob-grammer" class="about-btn" target="_blank"><span  class="about-span">More content in my Youtube channel!</span>  <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
     </main>
     <footer>
         <div class="footer-content">
             <a href="https://www.youtube.com/@Noob-grammer" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a>
-            <a href="https://twitter.com/Noobgrammer" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
-            <a href="https://www.instagram.com/Noobgrammer" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <span class="copy-tooltip" id="copy-tooltip">Email copied to clipboard!</span>
+            <a id="copy-email" href="mailto:noobgrammingadventures@gmail.com" target="_blank"><i class="fa-solid fa-at"></i> Email</a>
+            <!-- <a href="https://www.instagram.com/Noobgrammer" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a> -->
             <a href="https://ko-fi.com/noobgrammer" target="_blank"><i class="fa-solid fa-mug-hot"></i> Ko-Fi</a>
         </div>
     </footer>
+
+    <script src="JavaScript/copy.js"></script>
 </body>
 </html>
