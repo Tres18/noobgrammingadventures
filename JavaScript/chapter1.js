@@ -25,7 +25,7 @@ const button = document.getElementById('startButton');
 const skipButton = document.getElementById('skipButton');
 const openingText = document.getElementById('openingText');
 const startOpeningButton = document.getElementById('startOpening');
-let typingSound = new Audio('../Audio/typingsound.mp3'); // Replace 'typingsound.mp3' with the path to your audio file
+let typingSound = new Audio('../Audio/typingsound.mp3');
 const speed = 50;
 const interval = 1000;
 let index = 0;
@@ -40,27 +40,30 @@ startOpeningButton.addEventListener('click', () => {
 });
 
 button.addEventListener('click', () => {
+    button.style.animation = 'fadeInOut 0.5s forwards';
     button.style.display = 'none';
     typeNextDialogue();
 });
 
 function showOpeningText() {
     openingText.style.display = 'block';
+    openingText.style.animation = 'fadeInOut 1s forwards';
     setTimeout(() => {
         openingText.style.opacity = 1;
     }, 0);
 
     setTimeout(() => {
         startOpeningButton.style.display = 'block';
-    }, 500); // Display the start button after the text has fully faded in
+        startOpeningButton.style.animation = 'fadeInOut 0.5s forwards';
+    }, 2000);
 }
 
 function fadeOutOpeningText() {
-    openingText.style.animation = 'fadeOut 0.5s forwards';
+    openingText.style.animation = 'fadeOut 1s forwards';
     setTimeout(() => {
         openingText.style.display = 'none';
         typeNextDialogue();
-    }, 500); // Start dialogues after the text has faded out
+    }, 500);
 }
 
 function typeNextDialogue() {
@@ -74,6 +77,9 @@ function typeNextDialogue() {
             else if(index == dialogues.length) {
                 window.location.href = '../home.html';
             }
+            // else if(index == dialogues.length) {
+            //     window.location.href = 'https://www.youtube.com/@Noob-grammer';
+            // }
             else {
                 typeNextDialogue();
             }

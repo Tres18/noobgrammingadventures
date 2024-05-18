@@ -11,9 +11,9 @@ const element = document.getElementById('output');
 const speed = 50;
 const interval = 1000;
 let index = 0;
-let typingSound = new Audio('Audio/typingsound.mp3'); // Replace 'typingsound.mp3' with the path to your audio file
+let typingSound = new Audio('Audio/typingsound.mp3');
 
-typeNextDialogue();
+setTimeout(typeNextDialogue, 3000);
 
 function typeNextDialogue() {
     if (index < dialogues.length) {
@@ -22,12 +22,15 @@ function typeNextDialogue() {
             typeNextDialogue();
         });
     }
+    else if (index == dialogues.length) {
+        element.style.animation = 'fadeOut 3s forwards';
+    }
 }
 
 function simulateTyping(element, text, speed, callback) {
     let i = 0;
     element.innerHTML = '';
-    typingSound.play(); // Start playing the typing sound
+    typingSound.play();
 
     function typeCharacter() {
         if (i < text.length) {
@@ -35,7 +38,7 @@ function simulateTyping(element, text, speed, callback) {
             i++;
             setTimeout(typeCharacter, speed);
         } else {
-            typingSound.pause(); // Stop playing the typing sound
+            typingSound.pause();
             if (callback) {
                 setTimeout(callback, interval);
             }

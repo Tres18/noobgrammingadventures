@@ -326,17 +326,17 @@ a {
     place-items: center;
     font-size: 36px;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
     margin: 0px 50px;
 }
 
 .start-box {
     display: flex;
     justify-content: center;
-    position: fixed; /* Change position to fixed */
+    position: fixed;
     bottom: 50px;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .start-box button {
@@ -384,11 +384,11 @@ a {
 .start-opening {
     display: flex;
     justify-content: center;
-    position: fixed; /* Change position to fixed */
+    position: fixed;
     bottom: 50px;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
-    font-size: 16px; /* Adjust font size as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
     background-color: #eeeeee;
     padding: 10px 15px;
     color: #131313;

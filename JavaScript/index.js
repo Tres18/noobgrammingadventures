@@ -10,7 +10,8 @@ const element = document.getElementById('output');
 const speed = 50;
 const interval = 1000;
 let index = 0;
-let typingSound = new Audio('Audio/typingsound.mp3'); // Replace 'typingsound.mp3' with the path to your audio file
+let typingSound = new Audio('Audio/typingsound.mp3');
+
 
 
 const introButton = document.getElementById('introButton');
@@ -27,12 +28,11 @@ function typeNextDialogue() {
         });
     }
     else if (index == dialogues.length) {
-        introButton.innerHTML = '- The Beningging - ';
-
-        introButton.addEventListener('click', () => {
-            window.location.href = 'Chapters/chapter1.html';
-        });
+        window.location.href = 'home.html';
     }
+    // else if (index == dialogues.length) {
+    //     element.style.animation = 'fadeOut 1s forwards';
+    // }
 }
 
 function simulateTyping(element, text, speed, callback) {
