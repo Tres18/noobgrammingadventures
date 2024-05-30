@@ -1,0 +1,355 @@
+<!doctypehtml>
+    <html lang=en>
+    <meta charset=UTF-8>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta name="description"
+        content="A website showcasing programming projects such as counter program using JavaScript, HTML, and CSSm and other tutorials made by a beginner programmer for fellow beginner and aspiring programmers.">
+    <meta name="keywords"
+        content="programming, tutorials, projects, coding, beginner, aspiring, noob, starter, noobgrammer, noobgramming adventures, javascript, html, css, counter program using javascript">
+    <title>JS Counter Program - Noobgramming Adventures</title>
+    <link href=../style.css rel=stylesheet>
+    <link href=../Image/logo.png rel=icon>
+    <script src=https://kit.fontawesome.com/b1d60e9318.js crossorigin=anonymous></script>
+    <header>
+        <div class=logo><a href=home.html><img alt="Noobgramming Adventures Logo" src="../Image/logo no bg.png"></a>
+        </div>
+        <a href=home.html>
+            <h1>Noobgramming Adventures</h1>
+        </a>
+        <nav>
+            <ul class=nav-links>
+                <li><a href=../home.html title=Home><i class="fa-solid fa-house"></i></a>
+                <li><a href=../project.html title=Projects><i class="fa-folder-open fa-regular"></i></a>
+                <li><a href=../adventure.html title=Adventures><i class="fa-solid fa-shield-halved"></i></a>
+                <li><a href=../about.html title=About><i class="fa-solid fa-circle-info"></i></a>
+            </ul>
+        </nav>
+    </header>
+    <main class=spiel-main>
+        <div class=spiel-content>
+            <h1 class=spiel-header>Noobgramming Spiels</h1>
+            <div class=spiel-section>
+                <h1 class=spiel-subhead>JS Counter Program!</h1>
+                <hr>
+                <div class=spiel-paragraph>
+
+                    <p>I am bored... so I built a boring program.</p>
+
+                    <h2 style="text-align: center;">Introducing: JavaScript Counter Program</h2>
+
+                    <p>What does it do? Simple.</p>
+
+                    <p>Display a value on screen and update it depending on which of these three buttons were pressed.
+                    </p>
+
+                    <p>How is it done? Simple.</p>
+
+                    <div style=" font-size: 4rem; text-align: center;">
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+
+                    <p>We'll use JavaScript, HTML, and CSS.</p>
+
+                    <p><i>"Why these?"</i>, you may ask?</p>
+
+                    <p><b>Because this is what I used to create it.</b></p>
+
+                    <p style="text-align: center;"><i>"My program, my rules."</i></p>
+
+                    <p style="font-size: 16px; text-align: center">- Noobgrammer</p>
+
+                    <h3>Let's start building.</h3>
+
+                    <p>Open your Visual Studio Code (or whatever text editor you are using.)</p>
+
+                    <img src="..//Image/vscode.png" alt="meme pointing to Visual Studio Code"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p>Create a new folder and name it whatever you want.</p>
+
+                    <p>Now, we have two options here: either build the app in one HTML file or use three files,
+                        separating
+                        the
+                        HTML, CSS, and JavaScript.</p>
+
+                    <p>Let's do both and start with the one file version.</p>
+
+                    <p>Inside the folder you just made, create an HTML file. Let's name it index.html.</p>
+
+                    <img src="../Image/counter/index file creation.png" alt="index file creation in VS Code"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p><i>"B-b-but why name it like that?"</i></p>
+
+                    <p>Well, the extension is the most important thing in that. "index" is used because when web
+                        browsers
+                        opens
+                        a website, index.html is the default page.</p>
+
+                    <p>It is not necessary for this project but it's good practice for web development.</p>
+
+                    <p>Next, generate a full basic HTML structure.</p>
+
+                    <p>To do it, click on the text editor worksapce, type '!' and then hit tab.</p>
+
+                    <p>If it doesn't work for you, check if you have 'Emmet' extension.</p>
+
+                    <p>Other options I know would be to manually copy this or just ask A.I.</p>
+
+                    <p>Anyway, we need to have a visual output for the count value. I'll use an h1 tag for it.</p>
+
+                    <img src="../Image/counter/h1 tag creation.png" alt="h1 tag creation in index.html"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p>Next, we need buttons that updates the displayed value.</p>
+
+                    <p>Let's add three buttons.</p>
+
+                    <img src="../Image/counter/button.png" alt="button creation in index.html"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p>Let's hit save to hurt your eyes with the embarassing look of the page right now.</p>
+
+                    <img src="../Image/counter/webpage.png" alt="web page look of the index.html"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p>To fix that, let's add a style tag in the head section.</p>
+
+                    <img src="../Image/counter/style.png" alt="index file creation in VS Code"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p>Before we start styling, let's put all these elements inside a div to make it easier to style.
+                    </p>
+
+                    <img src="../Image/counter/enclose.png" alt="enclosing the elements in a div"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p>Going back to styling, copy these code below if you want.</p>
+
+                    <div>
+                        <p>- div that contains all the elements:</p>
+                        <img src="../Image/counter/css-container.png"
+                            alt="CSS for the div that contains all the elements" style="width: 100%; margin: 10px 0px"
+                            loading="lazy">
+
+                        <p>- h1 for the title:</p>
+                        <img src="../Image/counter/css-h1.png" alt="h1 for the title"
+                            style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                        <p>- h2 for the visual output:</p>
+                        <img src="../Image/counter/css-h2.png" alt="h2 for the visual output"
+                            style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                        <p>- buttons:</p>
+                        <img src="../Image/counter/css-button.png" alt="CSS for the buttons"
+                            style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    </div>
+
+                    <p>I also updated the HTML file. I added another h1 tag and change the h1 tag for the visual output
+                        into h2 tag:</p>
+                    <img src="../Image/counter/updated-body.png" alt="updated index.html"
+                        style="width: 100%; margin: 10px 0px;" loading="lazy">
+
+                    <p>Discussing CSS is a separate topic and I don't want to ruin anyone's life with my CSS skills.</p>
+                    <img src="../Image/counter/update-style.png" alt="styled html file"
+                        style="width: 100%; margin: 10px 0px;" loading="lazy">
+
+                    <p>It doesn't look too bad now. But here's the problem: it is not functional.</p>
+
+                    <h3 style="text-align: center;"> That's where the JavaScript magic comes in.</h3>
+
+                    <p>Add a script tag at the bottom part of the body.</p>
+
+                    <img src="../Image/counter/script.png" alt="added a script tag at the bottom of the body"
+                        style="width: 100%; margin: 10px 0px;" loading="lazy">
+
+                    <p>Inside the script is where all the logic happens.</p>
+
+                    <p>Before we can do anything here, let's first add "id" on the display and buttons so that we can
+                        use them in the script.</p>
+
+                    <img src="../Image/counter/id.png" alt="styled html file" style="width: 100%; margin: 10px 0px;"
+                        loading="lazy">
+
+                    <p> - header tag will have an "output" id</p>
+                    <p> - "decBtn" for the decrease button</p>
+                    <p> - "resetBtn" for the reset button</p>
+                    <p> - And "incBtn" for the increase button</p>
+
+                    <p><b>Let's go back to the script.</b></p>
+
+                    <p>We need to use "document.getElementById()" to use the HTML elements. That's why we put an id to
+                        each one.</p>
+
+                    <img src="../Image/counter/getelement.png" alt="using document.getElementById()"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p>To have an easier life, let's assign it in a constant variable.</p>
+
+                    <p>we'll name each similar to the id just to make things easier to identify.</p>
+
+                    <img src="../Image/counter/variables.png" alt="assigning the functions to a constant variable"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p>Next, we need a variable to contain the value that we will be updating on button press.</p>
+
+                    <img src="../Image/counter/index.png" alt="variable assignment for value update"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p>Now that's out of the way, let's do the magic.</p>
+
+                    <p>Starting with the decrease button, we want the value to reduce by one after we click the button.
+                    </p>
+
+                    <p>To do that:</p>
+
+                    <img src="../Image/counter/onclick.png" alt="onclick function" style="width: 100%; margin: 10px 0px"
+                        loading="lazy">
+
+                    <p>What does this line do? <b>Simple.</b></p>
+
+                    <p>If the button with the decBtn id is clicked, the function will run.</p>
+
+                    <p>And to decrease the value displayed on screen, we'll do this:</p>
+
+                    <img src="../Image/counter/decBtn index-=1.png" alt="logic for decreasing the current value by 1"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p>This line is a more compact line for "index = index - 1";</p>
+
+                    <p>Meaning, we are reducing the current value by 1 and make it its updated value.</p>
+
+                    <p>But this won't do anything on the display at the moment.</p>
+
+                    <p>This is because we haven't updated the element just yet.</p>
+
+                    <p>Here's how to do that:</p>
+
+                    <img src="../Image/counter/output.textcontent.png" alt="updating the text content of the element"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p>Here, we are updating the text content of the element which has the output tag. In this case, the
+                        h1 tag for visual output.</p>
+
+                    <img src="../Image/counter/workingdecBtn.png" alt="demo of the decrease buttong working"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p>And now, the number is reducing by one.</p>
+
+                    <p>But before I finish the remaining functions, I have a task for you.</p>
+
+                    <p>It's not clicking the subscribe button in my <a href="https://www.youtube.com/@Noob-grammer"
+                            style="text-decoration: underline;">Youtube Channel</a>, though I would really appreciate
+                        it.
+                    </p>
+
+                    <p>Rather, I want you to try doing the magic for reset and increase buttons.</p>
+
+                    <p>I'll wait here...</p>
+
+                    <img src="../Image/waiting meme.jpg" alt="waiting meme" style="width: 100%; margin: 10px 0px"
+                        loading="lazy">
+
+                    <p>...</p><br><br>
+
+                    <p>...</p><br><br>
+
+                    <p>...</p><br><br>
+
+                    <p>...</p><br><br>
+
+                    <p>...</p><br><br>
+
+                    <p>...</p><br><br>
+
+                    <p>...</p><br><br>
+
+                    <p>...</p><br><br>
+
+                    <p>...</p><br><br>
+
+                    <p>Are you done? Did you do it? No?</p>
+
+                    <img src="../Image/sad cat ok.gif" alt="sad cat ok meme" style="width: 100%; margin: 10px 0px"
+                        loading="lazy">
+
+                    <p>Welp, let's finish the rest of it.</p>
+
+                    <p>For the reset button and increase button, we'll do these:</p>
+
+                    <img src="../Image/counter/complete functions.png" alt="functions for the reset and increase button"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p>And since I'm not badly terrible at programming, they're working properly now.</p>
+
+                    <img src="../Image/noice.jpg" alt="noice meme" style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p>But we have one more thing to do:</p>
+
+                    <h3 style="text-align: center;">Separating JS, HTML, and CSS</h3>
+
+                    <p>We did the one-file version but not the 3 file one.</p>
+
+                    <p>In a bigger projects, you typically don't want to put everything in a single HTML, especially
+                        when
+                        you're using the same styling format or script on multiple pages.</p>
+
+                    <p>That will cause redundancy and more headaches in the long run.</p>
+
+                    <p>To update our code, create two more files: script.js and style.css.</p>
+
+                    <img src="../Image/counter/scriptcss.png" alt="creating script.js and style.css files"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <p>script.js contains what's in our script tag while style.css contains the styling we did.</p>
+
+                    <p>But doing only these will remind us to the humiliating history of this project's appearance, a
+                        few
+                        mins
+                        ago.</p>
+
+                    <img src="../Image/counter/unstyled.png" alt="unstyled HTML" style="width: 100%; margin: 10px 0px"
+                        loading="lazy">
+
+                    <p>It is because we need to include this to apply the css and a script tag, which sources the
+                        script.js
+                    </p>
+
+                    <img src="../Image/counter/link to css.png" alt="linking the CSS to HTML"
+                        style="width: 100%; margin: 10px 0px" loading="lazy">
+
+                    <img src="../Image/counter/script source.png" alt="adding the JavaScript source to the script tag" style="width: 100%; margin: 10px 0px"
+                        loading="lazy">
+
+                    <p>Let's check it again to see if it still works.</p>
+
+                    <p><i><b>(Youtube Video Coming Soon!)</b></i></p>
+
+                    <h3 style="text-align: center;">Yes it does.</h3>
+
+                    <p>So that's how a noobgrammer like me built a counter program using JS HTML CSS.</p>
+
+                    <p>If you found something helpful in this video, I appreciate a <a
+                            href="https://www.youtube.com/@Noob-grammer" style="text-decoration: underline;">subscribe
+                            button
+                            press</a> as payment!</p>
+
+                    <p>Make sure to comment down below if you have suggestions, recommendations, or you just want to
+                        roast
+                        me and my code.</p>
+                </div>
+            </div>
+            <h1 class=coming-soon>More projects coming soon...</h1>
+        </div>
+    </main>
+    <footer>
+        <div class=footer-content><a href=https://www.youtube.com/@Noob-grammer target=_blank><i
+                    class="fa-brands fa-youtube"></i> YouTube</a> <span class=copy-tooltip id=copy-tooltip>Email copied
+                to clipboard!</span> <a href=mailto:noobgrammingadventures@gmail.com target=_blank id=copy-email><i
+                    class="fa-solid fa-at"></i> Email</a><a href=https://ko-fi.com/noobgrammer target=_blank><i
+                    class="fa-solid fa-mug-hot"></i> Ko-Fi</a></div>
+    </footer>
+    <script src=JavaScript/copy.js></script>

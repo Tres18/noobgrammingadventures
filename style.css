@@ -1,30 +1,24 @@
-@font-face {
-    font-family: "Boring-Sans-B-Medium";
-    src: url("Font/boring_sans_b/Boring-Sans-B-Medium-trial.ttf");
-}
-
-@font-face {
-    font-family: "Boring-Sans-B-Regular";
-    src: url("Font/boring_sans_b/Boring-Sans-B-Regular-trial.ttf");
-}
-
-/* Intro Button */
 #introButton {
-    color: #aaaaaa;
+    color: #aaa
 }
 
 #introButton:hover {
-    color: #ffffff;
-    cursor: pointer;
+    color: #fff;
+    cursor: pointer
 }
 
 body {
-    background-color: #131313;
+    background-color: #131313
 }
 
-body, h1, h2, nav, ul, li {
+body,
+h1,
+h2,
+nav,
+ul,
+li {
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 header {
@@ -33,40 +27,55 @@ header {
     display: flex;
     padding: 10px 20px;
     align-items: center;
-    position: relative;
+    position: relative
 }
 
-h1, h2, p {
-    font-family: "Boring-Sans-B-Medium";
-    color: #f0f0f0;
+h1,
+h2,
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f0f0f0
 }
 
-a, button { font-family: "Boring-Sans-B-Medium";}
+a,
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-header h1 { font-size: 1.5rem; }
+header h1 {
+    font-size: 1.5rem
+}
 
-.logo { margin-right: 20px; }
+.logo {
+    margin-right: 20px
+}
 
-.logo img { height: 40px; }
+.logo img {
+    height: 40px
+}
 
-nav { margin-left: auto; }
+nav {
+    margin-left: auto
+}
 
-nav ul { 
+nav ul {
     display: flex;
-    list-style: none;
+    list-style: none
 }
 
-nav li { margin: 10px 20px; }
+nav li {
+    margin: 10px 20px
+}
 
 a {
     color: #f0f0f0;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .menu-icon {
     display: none;
     font-size: 1.5rem;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .home-main {
@@ -74,173 +83,168 @@ a {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0px 30px;
+    margin: 0 30px
 }
 
 .home-content {
     text-align: center;
-    position: relative;
+    position: relative
 }
 
 #home-content-h1 {
-    color: white;
+    color: #fff;
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 #home-content-p1 {
-    color: white;
-    font-size: 2rem;
+    color: #fff;
+    font-size: 2rem
 }
 
 #home-content-p2 {
-    color: white;
+    color: #fff;
     font-size: 1.2rem;
-    max-width: 600px;
-
+    max-width: 600px
 }
 
 .home-btn-container {
     display: flex;
     justify-content: center;
     gap: 10px;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .home-btn {
-    background-color: #eeeeee;
+    background-color: #eee;
     padding: 10px 10px;
     color: #131313;
     text-decoration: none;
     border: 2px solid #505050;
     border-radius: 20px;
-    width: 200px;
+    width: 30%;
     box-sizing: border-box;
     text-align: center;
 }
 
 .home-btn:hover {
-    background-color: #FFFFFF;
+    background-color: #FFF
 }
 
 #nty {
-    position: relative;
+    position: relative
 }
 
-/* Adventure Section */
-
 .adventure-header {
+    text-align: center;
     margin: 20px;
 }
 
 .adventure-main {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Set minimum height to full viewport height */
+    min-height: 100vh
 }
 
 .adventure-content {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content vertically */
+    align-items: center
 }
 
 .adventure-section {
     background-color: #1f1f1f;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgb(0 0 0 / .2);
     margin-bottom: 20px;
     padding: 20px;
     width: 80%;
     max-width: 800px;
     text-align: left;
     position: relative;
-    /* Center the box horizontally */
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
 
 .adventure-section:hover {
     background-color: #2e2e2e;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .adventure-section h1 {
-    text-align: center;
+    text-align: center
 }
 
 .adventure-paragraph {
-    font-family: "Boring-Sans-B-Regular";
-    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
-
-/* About Section */
 
 .about-main {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 30px;
+    margin: 30px
 }
 
 .about-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center
 }
 
 #about-content-h1 {
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .about-section {
     background-color: #1f1f1f;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgb(0 0 0 / .2);
     margin-bottom: 20px;
     padding: 20px;
     width: 80%;
     max-width: 800px;
     text-align: left;
-    position: relative;
+    position: relative
 }
 
 .about-section h1 {
-    text-align: center;
+    text-align: center
 }
 
-.about-paragraph, .about-paragraph-last {
-    font-family: "Boring-Sans-B-Regular";
-    color: white;
+.about-paragraph,
+.about-paragraph-last {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .about-paragraph-last {
-    padding-bottom: 10px;
+    padding-bottom: 10px
 }
 
 .about-list {
-    margin: 20px 30px;
+    margin: 20px 30px
 }
-
 
 .about-btn {
     padding: 10px 15px;
-    color: #aaaaaa;
+    color: #aaa;
     text-decoration: none;
     position: absolute;
     bottom: 20px;
     right: 20px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 5px
 }
 
 .about-span {
-    position: relative;
+    position: relative
 }
 
 .about-span::after {
@@ -250,74 +254,111 @@ a {
     bottom: -2px;
     width: 100%;
     height: 1px;
-    background-color: #aaaaaa;
-    transition: background-color 0.3s;
+    background-color: #aaa;
+    transition: background-color 0.3s
 }
 
 .about-btn:hover .about-span::after {
-    background-color: #FFFFFF;
+    background-color: #FFF
 }
 
 .about-btn:hover {
-    color: #FFFFFF;
+    color: #FFF
 }
 
-
-/* Project Section */
-
 .project-header {
-    margin: 20px;
+    margin: 20px
 }
 
 .project-main {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Set minimum height to full viewport height */
+    min-height: 100vh
 }
 
 .project-content {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content vertically */
+    align-items: center
 }
 
 .project-section {
     background-color: #1f1f1f;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgb(0 0 0 / .2);
     margin-bottom: 20px;
     padding: 20px;
     width: 80%;
     max-width: 800px;
     text-align: left;
     position: relative;
-    /* Center the box horizontally */
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
 
 .project-section:hover {
     background-color: #2e2e2e;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .project-section h1 {
-    text-align: center;
+    text-align: center
 }
 
 .project-paragraph {
-    font-family: "Boring-Sans-B-Regular";
-    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
     font-size: 1.2rem;
+    margin-bottom: 20px
+}
+
+/* Spiel Section */
+
+.spiel-header {
+    margin: 20px
+}
+
+.spiel-main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+.spiel-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.spiel-section {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / .2);
     margin-bottom: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.spiel-section h1 {
+    text-align: center
+}
+
+.spiel-paragraph {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 20px
 }
 
 .coming-soon {
-    color: #aaaaaa;
-    text-align: center;
+    color: #aaa;
+    text-align: center
 }
-
-/* start */
 
 .output-box {
     display: flex;
@@ -327,7 +368,7 @@ a {
     font-size: 36px;
     text-align: center;
     height: 90vh;
-    margin: 0px 50px;
+    margin: 0 50px
 }
 
 .start-box {
@@ -336,12 +377,12 @@ a {
     position: fixed;
     bottom: 50px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%)
 }
 
 .start-box button {
-    font-size: 16px; /* Adjust font size as needed */
-    background-color: #eeeeee;
+    font-size: 16px;
+    background-color: #eee;
     padding: 10px 15px;
     color: #131313;
     text-decoration: none;
@@ -349,27 +390,35 @@ a {
     border-radius: 20px;
     box-sizing: border-box;
     text-align: center;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .start-box button:hover {
-    background-color: #FFFFFF;
+    background-color: #FFF
 }
 
-/* Chapter Opening */
-
 @keyframes fadeInOut {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
 }
 
 @keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
 }
 
 .opening-text {
-    font-family: "Boring-Sans-B-Medium";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #f0f0f0;
     text-align: center;
     font-size: 3rem;
@@ -378,7 +427,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    display: none;
+    display: none
 }
 
 .start-opening {
@@ -389,7 +438,7 @@ a {
     left: 50%;
     transform: translateX(-50%);
     font-size: 16px;
-    background-color: #eeeeee;
+    background-color: #eee;
     padding: 10px 15px;
     color: #131313;
     text-decoration: none;
@@ -397,127 +446,116 @@ a {
     border-radius: 20px;
     box-sizing: border-box;
     text-align: center;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .start-opening:hover {
-    background-color: #FFFFFF;
+    background-color: #FFF
 }
 
-
-
-/* Skip */
-
 .skip-box {
-    position: relative; /* Make the container relative */
-    /* Other styles for the output-box */
+    position: relative
 }
 
 #skipButton {
-    font-size: 12px;   
+    font-size: 12px;
     text-decoration: underline;
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 20px
 }
 
 footer {
     background-color: #0a0a0a;
     padding: 20px 0;
     text-align: center;
-    flex-shrink: 0;
+    flex-shrink: 0
 }
 
 .footer-content {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 20px
 }
 
 .footer-content a {
     color: #f0f0f0;
     font-size: 1.2rem;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .footer-content a i {
-    margin-right: 8px;
+    margin-right: 8px
 }
-
-/* Popup */
 
 .popup {
-    display: none; /* Hidden by default */
-    position: fixed; 
-    z-index: 1; 
-    left: 0; 
-    top: 0; 
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.4); 
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0 0 0 / .4)
 }
 
-/* Popup content */
 .popup-content {
     background-color: #2e2e2e;
-    margin: 15% auto; 
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #505050;
     width: 80%;
     max-width: 300px;
-    text-align: center;
+    text-align: center
 }
 
-/* Close button */
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
+    font-weight: 700;
+    cursor: pointer
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
     color: #f0f0f0;
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer
 }
 
-/* Buttons in the popup */
 .button {
     display: inline-block;
     margin: 10px;
     padding: 10px 10px;
     color: #131313;
-    background-color: #eeeeee;
+    background-color: #eee;
     border-radius: 20px;
     width: 200px;
     box-sizing: border-box;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .button:hover {
-    background-color: #FFFFFF;
+    background-color: #FFF
 }
-
-/* Email copy to clipboard */
 
 .copy-tooltip {
     position: absolute;
     top: 105%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(0 0 0 / .8);
     padding: 5px 10px;
     border-radius: 5px;
-    font-family: "Boring-Sans-B-Medium";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     color: #f0f0f0;
     transition: opacity 0.3s ease;
     opacity: 0;
-    pointer-events: none;
+    pointer-events: none
 }
 
 .copy-tooltip::after {
@@ -528,45 +566,75 @@ footer {
     transform: translateX(-50%);
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent rgba(0, 0, 0, 0.8) transparent;
+    border-color: #fff0 #fff0 rgb(0 0 0 / .8) #fff0
 }
 
+@media (max-width:700px) {
+    header h1 {
+        font-size: 1.5rem
+    }
 
+    nav li {
+        margin: 10px 10px
+    }
 
-@media (max-width: 700px) {
-    header h1 { font-size: 1.5rem; }
+    #home-h1 {
+        font-size: 2rem
+    }
 
-    nav li { margin: 10px 10px; }
+    #home-p1 {
+        font-size: 1.5rem
+    }
 
-    #home-h1 { font-size: 2rem; }
-
-    #home-p1 { font-size: 1.5rem; }
-
-    .home-btn { width: 100%; }
+    .home-btn {
+        width: 100%
+    }
 
     .output-box {
-        font-size: 1.5rem;
+        font-size: 1.5rem
     }
 
     .about-section {
-        width: 90%;
+        width: 90%
     }
 
-    .about-paragraph, .about-paragraph-last {
+    .about-paragraph,
+    .about-paragraph-last {
         font-size: 1rem;
+    }
+
+    .about-span {
+        font-size: 0.8rem;
     }
 
     .footer-content a {
-        font-size: 0.8rem;
+        font-size: .8rem
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width:600px) {
     header h1 {
-        font-size: 1rem;
+        font-size: 1rem
     }
 
     .copy-tooltip {
-        font-size: 10px;
+        font-size: 10px
     }
+}
+
+.learn-more {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+#learnMore {
+    display: none;
+    font-size: 20px;
+    color: #aaa;
+    text-decoration: none;
+    text-align: center
 }
